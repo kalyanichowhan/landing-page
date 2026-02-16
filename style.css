@@ -1,0 +1,98 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fix typo here */
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+
+  /* Makes footer stay at bottom */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  /* Background image settings */
+  background-image: url("your-image.jpg"); /* your Unsplash image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Main content area */
+main {
+  flex: 1; /* pushes footer down */
+}
+
+/* Header */
+header {
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgba(0,0,0,0.8);
+}
+
+nav a {
+  color: #fff;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Section (this reduces visible background width) */
+section {
+  width: 60%;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 40px;
+   background: rgba(23, 29, 32, 0.6); 
+  border-radius: 10px;
+}
+
+p {
+  /* This makes the text larger */
+  font-size: 1.2rem; 
+  
+  /* This increases the distance between lines */
+  line-height: 1.6; 
+}
+/* Heading style */
+h2 {
+  color: #b09d30;
+}
+
+/* Footer always at bottom */
+footer{
+  
+  text-align: center;
+  padding: 20px;
+ background: rgba(125, 136, 146, 0.8);
+
+}
+/* Responsive Design */
+ Responsive Design
+@media (max-width: 768px) {
+  section {
+    width: 92%;
+    padding: 25px;
+  }
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}
